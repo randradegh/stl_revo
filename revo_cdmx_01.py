@@ -37,7 +37,8 @@ En este ejercicio se mostrarán solamente los resultados para la Ciudad de Méxi
 """
 
 # Datos de shape de alcaldías
-shape = gpd.read_file('/run/media/randrade/ADATAHV100/respaldos/rsync/randrade/capacitacion/python/curso_stl/app_test_01/data/limites_alcaldias_cdmx.geojson')
+#shape = gpd.read_file('/run/media/randrade/ADATAHV100/respaldos/rsync/randrade/capacitacion/python/curso_stl/app_test_01/data/limites_alcaldias_cdmx.geojson')
+shape = gpd.read_file('data/limites_alcaldias_cdmx.geojson')
 shape.rename(columns = {'nomgeo':'alcaldía'}, inplace = True)
 #st.write(shape)
 """
