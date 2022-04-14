@@ -1,0 +1,7 @@
+pandas
+plotly.express
+streamlit
+pydeck 
+geopandas
+numpy 
+
