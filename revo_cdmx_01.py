@@ -38,7 +38,7 @@ qué es importante y qué no lo es.
 Las imágenes hacen que el análisis sea mucho más fácil y rápido, y ofrecen la posibilidad 
 de ver de un vistazo lo que importa. 
 
-Este es solamente un ejercicio de análisis construído con algunas librerías de funciones de Pyton.
+Este es solamente un ejercicio de análisis construído con algunas librerías de funciones de Python.
 
 
 #### La revocación 
