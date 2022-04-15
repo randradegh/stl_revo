@@ -7,6 +7,19 @@ import geopandas as gpd
 import numpy as np
 from urllib.error import URLError
 
+# Debe ser el primer comando
+st.set_page_config(
+     page_title="Revocación de Mandato, CDMX",
+     page_icon="🧊",
+     layout="wide",
+     initial_sidebar_state="expanded",
+    #  menu_items={
+    #      'Get Help': 'https://www.extremelycoolapp.com/help',
+    #      'Report a bug': "https://www.extremelycoolapp.com/bug",
+    #      'About': "# This is a header. This is an *extremely* cool app!"
+    #  }
+)
+
 
 
 low_memory=False
@@ -47,7 +60,7 @@ shape.rename(columns = {'nomgeo':'alcaldía'}, inplace = True)
 - Datos de la población de las alcaldías de la CDMX.
 """
 # Leemos los datos de población
-
+# Fuente: https://es.wikipedia.org/wiki/Demarcaciones_territoriales_de_la_Ciudad_de_M%C3%A9xico
 df_pob = pd.read_csv('data/población_alcaldías_cdmx.csv')
 
 with st.expander("Visualizar/Ocultar Población por alcaldía", expanded=False):
@@ -106,7 +119,7 @@ df_full['count_siga/habitantes'] = round(df_full['count_siga']*100/df_full['habi
 # Votaciones
 # """
 """
-- Datos Integrados (geográficos, población, votación.
+- Datos Integrados (geográficos, población, votación).
 
 """
 with st.expander("Visualizar/Ocultar Datos integrados", expanded=False):
